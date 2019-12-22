@@ -1,0 +1,439 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-width: 1040px;
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", Semi-Bold;
+  font-size: 14px;
+  color: #3b3b3b;
+  letter-spacing: 0.125em;
+}
+
+header {
+  min-height: 1080px;
+  background-image: url("../img/bg-image.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.header-top {
+  padding-top: 117px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 1536px;
+  margin: 0 auto;
+}
+
+.logo {
+  float: left;
+  text-transform: uppercase;
+  color: white;
+  font-size: 30px;
+  font-family: "Raleway", Extra-Bold;
+  font-weight: bold;
+}
+
+.burger-menu {
+  float: right;
+  font-size: 24px;
+}
+
+.menu-btn {
+  display: block;
+  width: 100px;
+  position: relative;
+  text-decoration: none;
+}
+
+.menu-btn span {
+  position: absolute;
+  top: 13px;
+  right: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-btn span,
+.menu-btn span::before,
+.menu-btn span::after {
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background-color: white;
+}
+
+.menu-btn span::before,
+.menu-btn span::after {
+  content: "";
+  display: block;
+  transition: 0.2s;
+}
+
+.menu-btn span::before {
+  transform: translateY(-5px);
+}
+
+.menu-btn span::after {
+  transform: translateY(5px);
+}
+
+.menu-btn_active span::before {
+  transform: rotate(-35deg);
+  transform-origin: left bottom;
+  width: 10px;
+}
+
+.menu-btn_active span::after {
+  transform: rotate(35deg);
+  transform-origin: left top;
+  width: 10px;
+}
+
+.menu-btn .menu {
+  color: white;
+  text-transform: uppercase;
+}
+
+.promo {
+  float: right;
+  color: white;
+  padding-top: 387px;
+  text-align: right;
+}
+
+.promo h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.promo p {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 40px;
+}
+
+.promo i {
+  font-family: "Raleway", Light Italic;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.mouse {
+  padding-top: 220px;
+  text-align: center;
+}
+
+.nav-item {
+  box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, .27);
+}
+
+.nav .logo {
+  float: left;
+  color: #1c1c1c;
+  padding: 25px 0;
+}
+
+.main-menu {
+  float: right;
+  text-transform: uppercase;
+  font-size: 18px;
+  list-style: none;
+  padding: 35px 0;
+}
+
+.main-menu li {
+  padding-left: 100px;
+  display: inline-block;
+}
+
+.main-menu li:last-child {
+  padding-left: 75px;
+}
+
+.main-menu li:nth-child(5) {
+  padding-left: 75px;
+}
+
+.main-menu li a {
+  text-decoration: none;
+  color: #3b3b3b;
+}
+
+.about-us {
+  padding: 50px 0 67px 0;
+  text-align: center;
+}
+
+.title {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #1c1c1c;
+  text-align: center;
+}
+
+.text {
+  font-size: 18px;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.featured-products .text {
+  font-size: 18px;
+  padding: 20px 0 0 0;
+  text-align: center;
+}
+
+.about-us img {
+  padding-bottom: 20px;
+}
+
+.about-us p:last-child {
+  font-size: 14px;
+  text-align: left;
+  margin: 0 96px;
+}
+
+.some-statics {
+  min-height: 457px;
+  background-image: url("../img/some-statics-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 95px 0 105px 0;
+}
+
+.some-statics .title {
+  color: white;
+}
+
+.some-statics .text {
+  color: white;
+  padding-bottom: 80px;
+}
+
+.some-statics ul {
+  text-align: center;
+  color: white;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.some-statics ul li {
+  display: inline-block;
+}
+
+.some-statics ul li:nth-child(2) {
+  padding: 0 190px;
+}
+
+.some-statics ul li h1 {
+  font-size: 72px;
+  padding-bottom: 30px;
+}
+
+.some-statics ul li p {
+  font-size: 18px;
+}
+
+.featured-products {
+  padding: 50px 0 75px 0;
+}
+
+.featured-products table {
+  padding: 0 96px;
+}
+
+.featured-products table td {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.featured-products table td:nth-child(2) {
+  padding: 50px 70px 0 70px;;
+}
+
+.featured-products table td h3 {
+  font-size: 24px;
+  font-family: "Raleway", Bold;
+  text-transform: uppercase;
+}
+
+.featured-products table td b {
+  font-size: 30px;
+  font-family: "Raleway", Semi-Bold;
+}
+
+.featured-products table td a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #3b3b3b;
+  border-bottom: 1px solid #3b3b3b;
+}
+
+.meet-the-team {
+  background-color: #ededed;
+  padding: 45px 0 68px;
+}
+
+.meet-the-team ul {
+  text-align: center;
+}
+
+.meet-the-team ul li {
+  display: inline-block;
+}
+
+.meet-the-team ul li:nth-child(2) {
+  padding: 0 265px;
+}
+
+.meet-the-team .title {
+  padding: 0 0 25px 0;
+}
+
+.meet-the-team p {
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.meet-the-team .text {
+  text-transform: uppercase;
+  padding: 0;
+}
+
+.social {
+  padding-top: 65px;
+  text-align: center;
+}
+
+.social .text {
+  padding-bottom: 55px;
+}
+
+.social .container {
+  width: 1540px;
+}
+
+.social ul {
+  margin: 0;
+  padding: 0;
+}
+
+.social ul li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.social p:last-child {
+  padding: 60px 0;
+  font-size: 24px;
+}
+
+.social a {
+  text-decoration: none;
+  color: #1e1e1e;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #1e1e1e;
+  padding-top: 60px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding-bottom: 95px;
+}
+
+footer .title {
+  padding-bottom: 145px;
+  color: white;
+}
+
+.quick-links {
+  float: left;
+  padding-left: 96px;
+  font-size: 18px;
+}
+
+.quick-links th {
+  font-family: "Raleway", Black;
+  padding-right: 233px;
+  padding-bottom: 30px;
+}
+
+.quick-links td {
+  padding-bottom: 15px;
+}
+
+.social-links {
+  float: left;
+}
+
+.social-links p {
+  font-family: "Raleway", Black;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+
+.sprite {
+    display: inline-block;
+    background-image: url("../img/spritesheet.png");
+    background-repeat: no-repeat;
+    padding-right: 5px;
+}
+
+.sprite-facebook {
+    width: 29px;
+    height: 30px;
+    background-position: -5px -5px;
+}
+
+.sprite-instagram {
+    width: 30px;
+    height: 30px;
+    background-position: -44px -5px;
+}
+
+.sprite-linked-in {
+    width: 30px;
+    height: 28px;
+    background-position: -84px -5px;
+}
+
+.sprite-twitter {
+    width: 30px;
+    height: 26px;
+    background-position: -124px -5px;
+}
+
+.maps {
+  float: right;
+  padding-right: 96px;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+
+}
+
+.iframe {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
